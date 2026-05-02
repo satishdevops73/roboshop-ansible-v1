@@ -31,10 +31,10 @@
         path: /tmp/frontend
         state: directory
 
-    - name: Download and Unarchive Frontend component
+    - name: Download  Frontend component
       ansible.builtin.unarchive:
-        src: https://raw.githubusercontent.com/raghudevopsb89/roboshop-microservices/main/artifacts/frontend.zip
-        dest: /tmp/frontend
+        src: https://raw.githubusercontent.com/raghudevopsb89/roboshop-microservices/main/artifacts/frontend-compiled.zip
+        dest: /usr/share/nginx/html
         remote_src: yes
 
 #    - name: Build static code
