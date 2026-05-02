@@ -44,12 +44,12 @@
         remote_src: yes
 
     - name: Load Schema
-      ansible.builtin.shell: mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/schema.sql
+      ansible.builtin.shell: mysql -h mysql-dev.kubek8.online -u root -pRoboShop@1 < db/schema.sql
       args:
         chdir: /app
 
     - name: Load App User
-      ansible.builtin.shell: mysql -h mysql-dev.rdevopsb89.online -u root -pRoboShop@1 < db/app-user.sql
+      ansible.builtin.shell: mysql -h mysql-dev.kubek8.online -u root -pRoboShop@1 < db/app-user.sql
       args:
         chdir: /app
 
